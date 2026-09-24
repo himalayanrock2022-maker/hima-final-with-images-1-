@@ -99,36 +99,36 @@ footer a.active{color:var(--maroon2);font-weight:700}
 .close-x{position:absolute;top:14px;right:14px;width:36px;height:36px;border-radius:50%;background:var(--card3);border:1px solid var(--border);display:grid;place-items:center;cursor:pointer;transition:.2s;color:#fff}
 .close-x:hover{background:var(--maroon);border-color:var(--maroon)}
 
-/* Expert Chat Widget - with minimize & cut */
-.Expert-widget{position:fixed;bottom:24px;right:24px;z-index:1300;font-family:'DM Sans',sans-serif}
-.Expert-bubble{width:62px;height:62px;background:linear-gradient(135deg,var(--maroon),var(--maroon2));border-radius:50%;display:grid;place-items:center;color:#fff;font-size:30px;box-shadow:0 14px 36px rgba(214,46,94,.45);cursor:pointer;animation:chatPulse 2.5s infinite;transition:.3s;border:2px solid rgba(255,255,255,.15)}
-.Expert-bubble:hover{transform:scale(1.08)}
+/* Hifaz Chat Widget - with minimize & cut */
+.hifaz-widget{position:fixed;bottom:24px;right:24px;z-index:1300;font-family:'DM Sans',sans-serif}
+.hifaz-bubble{width:62px;height:62px;background:linear-gradient(135deg,var(--maroon),var(--maroon2));border-radius:50%;display:grid;place-items:center;color:#fff;font-size:30px;box-shadow:0 14px 36px rgba(214,46,94,.45);cursor:pointer;animation:chatPulse 2.5s infinite;transition:.3s;border:2px solid rgba(255,255,255,.15)}
+.hifaz-bubble:hover{transform:scale(1.08)}
 @keyframes chatPulse{0%{box-shadow:0 0 0 0 rgba(214,46,94,.6)}70%{box-shadow:0 0 0 18px rgba(214,46,94,0)}100%{box-shadow:0 0 0 0 rgba(214,46,94,0)}}
-.Expert-panel{position:absolute;bottom:76px;right:0;width:360px;max-width:90vw;background:linear-gradient(180deg,var(--card2),var(--black2));border:1px solid var(--border2);border-radius:20px;box-shadow:0 24px 80px rgba(0,0,0,.5);overflow:hidden;display:none;animation:slideUp .3s ease}
-.Expert-panel.open{display:block}
+.hifaz-panel{position:absolute;bottom:76px;right:0;width:360px;max-width:90vw;background:linear-gradient(180deg,var(--card2),var(--black2));border:1px solid var(--border2);border-radius:20px;box-shadow:0 24px 80px rgba(0,0,0,.5);overflow:hidden;display:none;animation:slideUp .3s ease}
+.hifaz-panel.open{display:block}
 @keyframes slideUp{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}
-.Expert-header{background:linear-gradient(135deg,var(--maroon),var(--maroon2));padding:16px 18px;display:flex;justify-content:space-between;align-items:center;color:#fff}
-.Expert-header-info{display:flex;gap:12px;align-items:center}
-.Expert-avatar{width:42px;height:42px;background:#fff;border-radius:50%;display:grid;place-items:center;font-weight:800;color:var(--maroon);font-size:16px;border:2px solid rgba(255,255,255,.3)}
-.Expert-status{display:flex;flex-direction:column}
-.Expert-status b{font-size:14px;font-weight:800;line-height:1}
-.Expert-status span{font-size:11px;opacity:.9;display:flex;align-items:center;gap:5px}
-.Expert-status span i{width:7px;height:7px;background:#22c55e;border-radius:50%;display:inline-block;box-shadow:0 0 6px #22c55e;animation:blink 1.5s infinite}
-.Expert-controls{display:flex;gap:8px}
-.Expert-ctrl{width:30px;height:30px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.15);border-radius:8px;display:grid;place-items:center;cursor:pointer;transition:.2s;color:#fff;font-size:14px}
-.Expert-ctrl:hover{background:rgba(255,255,255,.28)}
-.Expert-body{padding:18px;background:var(--card)}
-.Expert-msg{background:var(--card3);border:1px solid var(--border);border-radius:14px 14px 14px 4px;padding:12px 14px;margin-bottom:12px;max-width:85%}
-.Expert-msg p{font-size:13px;color:#c8c8d8;line-height:1.5}
-.Expert-msg-time{font-size:10px;color:var(--muted2);margin-top:6px}
-.Expert-input-area{display:flex;gap:10px;padding:14px;background:var(--black2);border-top:1px solid var(--border)}
-.Expert-input{flex:1;background:var(--card3);border:1px solid var(--border);border-radius:12px;padding:11px 14px;color:#fff;font-size:13px;outline:none}
-.Expert-input:focus{border-color:var(--maroon)}
-.Expert-send{width:42px;height:42px;background:linear-gradient(135deg,var(--maroon),var(--maroon2));border:none;border-radius:12px;display:grid;place-items:center;color:#fff;cursor:pointer;transition:.2s}
-.Expert-send:hover{transform:scale(1.05)}
-.Expert-minimized{position:fixed;bottom:24px;right:24px;background:var(--card2);border:1px solid var(--border2);border-radius:100px;padding:10px 16px;display:none;align-items:center;gap:10px;z-index:1300;box-shadow:0 12px 32px rgba(0,0,0,.4);cursor:pointer}
-.Expert-minimized.show{display:flex}
-.Expert-minimized-dot{width:10px;height:10px;background:#22c55e;border-radius:50%;box-shadow:0 0 8px #22c55e;animation:blink 1.5s infinite}
+.hifaz-header{background:linear-gradient(135deg,var(--maroon),var(--maroon2));padding:16px 18px;display:flex;justify-content:space-between;align-items:center;color:#fff}
+.hifaz-header-info{display:flex;gap:12px;align-items:center}
+.hifaz-avatar{width:42px;height:42px;background:#fff;border-radius:50%;display:grid;place-items:center;font-weight:800;color:var(--maroon);font-size:16px;border:2px solid rgba(255,255,255,.3)}
+.hifaz-status{display:flex;flex-direction:column}
+.hifaz-status b{font-size:14px;font-weight:800;line-height:1}
+.hifaz-status span{font-size:11px;opacity:.9;display:flex;align-items:center;gap:5px}
+.hifaz-status span i{width:7px;height:7px;background:#22c55e;border-radius:50%;display:inline-block;box-shadow:0 0 6px #22c55e;animation:blink 1.5s infinite}
+.hifaz-controls{display:flex;gap:8px}
+.hifaz-ctrl{width:30px;height:30px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.15);border-radius:8px;display:grid;place-items:center;cursor:pointer;transition:.2s;color:#fff;font-size:14px}
+.hifaz-ctrl:hover{background:rgba(255,255,255,.28)}
+.hifaz-body{padding:18px;background:var(--card)}
+.hifaz-msg{background:var(--card3);border:1px solid var(--border);border-radius:14px 14px 14px 4px;padding:12px 14px;margin-bottom:12px;max-width:85%}
+.hifaz-msg p{font-size:13px;color:#c8c8d8;line-height:1.5}
+.hifaz-msg-time{font-size:10px;color:var(--muted2);margin-top:6px}
+.hifaz-input-area{display:flex;gap:10px;padding:14px;background:var(--black2);border-top:1px solid var(--border)}
+.hifaz-input{flex:1;background:var(--card3);border:1px solid var(--border);border-radius:12px;padding:11px 14px;color:#fff;font-size:13px;outline:none}
+.hifaz-input:focus{border-color:var(--maroon)}
+.hifaz-send{width:42px;height:42px;background:linear-gradient(135deg,var(--maroon),var(--maroon2));border:none;border-radius:12px;display:grid;place-items:center;color:#fff;cursor:pointer;transition:.2s}
+.hifaz-send:hover{transform:scale(1.05)}
+.hifaz-minimized{position:fixed;bottom:24px;right:24px;background:var(--card2);border:1px solid var(--border2);border-radius:100px;padding:10px 16px;display:none;align-items:center;gap:10px;z-index:1300;box-shadow:0 12px 32px rgba(0,0,0,.4);cursor:pointer}
+.hifaz-minimized.show{display:flex}
+.hifaz-minimized-dot{width:10px;height:10px;background:#22c55e;border-radius:50%;box-shadow:0 0 8px #22c55e;animation:blink 1.5s infinite}
 
 .whatsapp{position:fixed;bottom:24px;left:24px;width:56px;height:56px;background:#25D366;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:26px;box-shadow:0 12px 30px rgba(37,211,102,.4);z-index:1200;transition:.25s}
 .whatsapp:hover{transform:scale(1.08)}
@@ -137,7 +137,7 @@ footer a.active{color:var(--maroon2);font-weight:700}
 @keyframes borderBlink{0%,100%{border-color:rgba(214,46,94,.35);box-shadow:0 0 0 0 rgba(214,46,94,.1)}50%{border-color:rgba(214,46,94,.7);box-shadow:0 0 0 10px rgba(214,46,94,.08)}}
 .input{width:100%;background:var(--card3);border:1px solid var(--border);color:#fff;padding:13px 15px;border-radius:12px;font-size:14px;margin:9px 0;outline:none;transition:.2s}
 .input:focus{border-color:var(--maroon);background:var(--card2)}
-@media(max-width:900px){.nav-links{display:none}.mobile-toggle{display:grid}.footer-grid{grid-template-columns:1fr 1fr}.pricing{grid-template-columns:1fr}.hero{padding:104px 0 56px}.Expert-panel{width:92vw;right:-8px}}
+@media(max-width:900px){.nav-links{display:none}.mobile-toggle{display:grid}.footer-grid{grid-template-columns:1fr 1fr}.pricing{grid-template-columns:1fr}.hero{padding:104px 0 56px}.hifaz-panel{width:92vw;right:-8px}}
 
 @media(max-width:600px){
   .kicker{white-space:normal;letter-spacing:1.2px;font-size:10px;line-height:1.3}
