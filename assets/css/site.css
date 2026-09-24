@@ -139,39 +139,6 @@ footer a.active{color:var(--maroon2);font-weight:700}
 .input:focus{border-color:var(--maroon);background:var(--card2)}
 @media(max-width:900px){.nav-links{display:none}.mobile-toggle{display:grid}.footer-grid{grid-template-columns:1fr 1fr}.pricing{grid-template-columns:1fr}.hero{padding:104px 0 56px}.hifaz-panel{width:92vw;right:-8px}}
 
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
-  gap:20px;
+@media(max-width:600px){
+  .kicker{white-space:normal;letter-spacing:1.2px;font-size:10px;line-height:1.3}
 }
-@media (max-width: 600px) {
-
-
-
-  /* Keep hero inside mobile screen */
-
-  .hero {
-
-    width: 100%;
-
-    overflow: hidden;
-
-  }
-
-
-
-  .hero .container {
-
-    width: 100%;
-
-    max-width: 100%;
-
-    padding-left: 20px;
-
-    padding-right: 20px;
-
-    box-sizing: border-box;
-
-    overflow: hidden;
-
-  }
