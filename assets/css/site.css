@@ -139,13 +139,8 @@ footer a.active{color:var(--maroon2);font-weight:700}
 .input:focus{border-color:var(--maroon);background:var(--card2)}
 @media(max-width:900px){.nav-links{display:none}.mobile-toggle{display:grid}.footer-grid{grid-template-columns:1fr 1fr}.pricing{grid-template-columns:1fr}.hero{padding:104px 0 56px}.hifaz-panel{width:92vw;right:-8px}}
 
-@media(max-width:600px){
-  .grid{
-    grid-template-columns:1fr;
-    gap:16px;
-  }
-
-  .card{
-    width:100%;
-  }
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
+  gap:20px;
 }
