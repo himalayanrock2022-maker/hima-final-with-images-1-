@@ -144,3 +144,34 @@ footer a.active{color:var(--maroon2);font-weight:700}
   grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
   gap:20px;
 }
+@media (max-width: 600px) {
+
+
+
+  /* Keep hero inside mobile screen */
+
+  .hero {
+
+    width: 100%;
+
+    overflow: hidden;
+
+  }
+
+
+
+  .hero .container {
+
+    width: 100%;
+
+    max-width: 100%;
+
+    padding-left: 20px;
+
+    padding-right: 20px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+  }
